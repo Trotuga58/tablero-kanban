@@ -9,7 +9,7 @@
 Aplicación web para organizar tareas en tableros con tres columnas (**Por hacer**, **En curso** y **Hecho**).
 Cada persona tiene su cuenta y sus tableros se guardan en la nube.
 
-<!-- Demo en vivo: https://tablero-kanban.vercel.app -->
+**[Pruébalo en vivo →](https://tablero-kanban-blond.vercel.app)** Crea una cuenta con cualquier email y una contraseña de 6 caracteres o más.
 
 ## Qué hace
 
