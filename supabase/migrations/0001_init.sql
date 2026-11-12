@@ -35,3 +35,8 @@ create policy "tasks: dueño" on public.tasks
     user_id = auth.uid()
     and exists (select 1 from public.boards b where b.id = board_id and b.user_id = auth.uid())
   );
+
+-- Permisos para la API de datos (necesarios si el proyecto no expone tablas nuevas automáticamente).
+-- RLS sigue limitando cada fila a su dueño.
+grant usage on schema public to authenticated;
+grant select, insert, update, delete on public.boards, public.tasks to authenticated;
